@@ -1,0 +1,10 @@
+version: '2'
+services:
+  nodejs:
+    build: .
+    volumes:
+      - .:/myapp
+    # run typescript compiler and watch on save
+    command: tsc -w
+
+
